@@ -4,6 +4,11 @@
 <div id="acc">
     <h1>Current balance {{balance}}</h3>
     <h2>previous profit: {{profit}}</h2>
-    <button id="but" name="Trade" value="False">stopTrade</button>
+    <form method="post" >
+        {% csrf_token %}
+        <h3>The button display False when there is no Trading and display True when there is trading</h3>
+        <input type="submit" id="but" name="Trade" value="False">
+    </form>
+    
 </div>
 {% endblock %}

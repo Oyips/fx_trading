@@ -3,14 +3,13 @@ function func() {
     console.log("welcome");
     document.querySelector("#but").onclick=function(event){
         element=event.target
-        if (element.innerHTML==="stopTrade"){
+        if (element.value==="True"){
             console.log("button click");
-            element.innerHTML="startTrade";
             element.value="False";
             
         }
         else {
-        element.innerHTML='stopTrade';
+            console.log("button click");
             element.value="True" ;
         }
         }
