@@ -1,0 +1,17 @@
+
+{% extends "base.html" %}
+{%load static %}
+
+{%block content%}
+
+</div>
+<div id="intro">
+    <h1>Welcome on Board!!!!</h1>
+    <h2>Account balance is {{balance}}</h2>
+</div>
+<div id="imag">
+    <h3>Trading Chart</h3>
+    <img src="{% static 'chart.png' %}">
+</div>
+
+{%endblock%}
